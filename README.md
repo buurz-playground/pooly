@@ -1,19 +1,15 @@
 # Pooly
 
-**TODO: Add description**
+Suppose you spawn 1 million processes, and each process needs a connection to the database.
 
-<!-- ## Installation
+In effect, resource allocation is delegated to the worker-pool application.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `pooly` to your list of dependencies in `mix.exs`:
+If you’re familiar with the Poolboy library, much of its design has been adapted for this.
 
-```elixir
-def deps do
-  [{:pooly, "~> 0.1.0"}]
-end
-```
+Pooly’s features:
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/pooly](https://hexdocs.pm/pooly). -->
+* Supports multiple pools
+* Supports a variable number of workers
+* Variable-sized pool allows for worker overflow
+* Queuing for consumer processes when all workers are busy
 
